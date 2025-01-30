@@ -6,8 +6,11 @@
 
 body {
     background: #F6F6F8;
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    font-family: "Lexend Giga", serif;
+    font-optical-sizing: auto;
+    font-weight:300;
+    font-style:normal
 }
 
 .contenedor {
@@ -18,18 +21,46 @@ body {
 }
 
 .card {
-    border-radius: 10px;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    position: relative;
 }
+
+.card:hover {
+    transform: scale(1.05);
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover img {
+    filter: brightness(1.1) saturate(1.2);
+    transform: scale(1.08);
+}
+
 
 .contenido {
     padding-top: 70px;
+}
+
+.btn-buy {
+    background: #593EFF;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
 
 /* ----- ----- HABILIDADES ----- ----- */
 
 .servicios {
-    width: 90%;
+    width: 65%;
     max-width: 1200px;
     margin: auto;
     overflow: hidden;
@@ -94,7 +125,7 @@ body {
 /* ----- ----- HEADER ----- ----- */
 
 header {
-    background: linear-gradient(to bottom, #2E3192, #1BFFFF);
+    background: linear-gradient(to bottom, #0c0e3b, #65fcfc);
     background-repeat: no-repeat;
     max-height: 600px;
 }
